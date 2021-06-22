@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                background: #2d3436;
+            }
+            .middle{
+                position: absolute;
+                top:50%;
+                left :50%;
+                transform: translate(-50%,-50%);
+
+            }
+            .btn5{
+                position: absolute;
+                top:50%;
+                left :50%;
+                transform: translate(-180%,-480%);
+            }
+            .btn4{
+                position: absolute;
+                top:50%;
+                left :50%;
+                transform: translate(70%,-330%);
+            }
+            .btn{
+                position: relative;
+                display: block;
+                color:white;
+                font-size: 14px;
+                font-family: monospace;
+                text-decoration: none;
+                margin: 30px 0;
+                border: 2px solid #ff7675;
+                padding: 14px 60px ;
+                text-transform: uppercase;
+                overflow: hidden;
+                transition: hidden;
+                transition: 1s all ease;
+
+
+
+            }
+            .btn::before{
+                background: #ff7675;
+                content: "";
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%,-50%);
+                z-index: -1;
+                transition: all 0.6s ease;
+
+            }
+           
+
+            .btn1::before{
+                width: 100%;
+                height: 0;
+                transform: translate(-50%,-50%) rotate(45deg);
+            }
+            .btn1:hover::before{
+                height:300%;
+            }
+            .btn2::before{
+                width: 100%;
+                height: 0;
+                transform: translate(-50%,-50%) rotate(45deg);
+            }
+            .btn2:hover::before{
+                height:300%;
+            }
+           
+            .btn3::before{
+                width: 100%;
+                height: 0;
+                transform: translate(-50%,-50%) rotate(45deg);
+            }
+            .btn3:hover::before{
+                height:300%;
+            }
+            .btn4::before{
+                width: 100%;
+                height: 0;
+                transform: translate(-50%,-50%) rotate(45deg);
+            }
+            .btn4:hover::before{
+                height: 300%;
+            }
+            .btn5::before{
+                width: 100%;
+                height: 0;
+                transform: translate(-50%,-50%) rotate(45deg);
+            }
+            .btn5:hover::before{
+                height: 300%;
+            }
+            
+
+        </style>
+        <body>
+            <div class="middle">
+                <a href="" class="btn btn1"> forward</a>
+                <a href="" class="btn btn2"> stop</a>
+                <a href="" class="btn btn3"> backward</a>
+                <a href="" class="btn btn4">  right</a>
+                <a href="" class="btn btn5"> left</a>
+             </div>
+        </body>
+    </head>
+</html>
